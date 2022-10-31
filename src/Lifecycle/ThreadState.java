@@ -1,4 +1,4 @@
-package lifecycle;
+package Lifecycle;
 
 public class ThreadState extends Thread {
     private boolean keepRunning = true;

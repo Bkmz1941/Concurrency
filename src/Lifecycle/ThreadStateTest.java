@@ -1,4 +1,4 @@
-package lifecycle;
+package Lifecycle;
 
 public class ThreadStateTest {
     public static void main(String[] args) {
@@ -16,29 +16,29 @@ public class ThreadStateTest {
             syncObject.notify();
         }
 
-        // sleepNow(2000);
+        sleepNow(2000);
         detectAliveAndState(ts, 4);
 
         ts.setKeepRunning(false);
-        // sleepNow(2000);
+        sleepNow(2000);
         detectAliveAndState(ts, 5);
 
         /**
-         * isAlive():false
+         * isAlive(): false
          * #1: NEW
-         * isAlive():true
+         * isAlive(): true
          * #2: RUNNABLE
-         * isAlive():true
+         * isAlive(): true
          * #3: WAITING
-         * isAlive():true
+         * isAlive(): true
          * #4: RUNNABLE
-         * isAlive():true
+         * isAlive(): false
          * #5: TERMINATED
          */
     }
 
     private static void detectAliveAndState(Thread t, int n) {
-        System.out.println("isAlive():" + t.isAlive());
+        System.out.println("isAlive(): " + t.isAlive());
         System.out.println("#" + n + ": " + t.getState());
     }
 

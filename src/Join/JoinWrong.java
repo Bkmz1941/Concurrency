@@ -1,4 +1,4 @@
-package join;
+package Join;
 
 public class JoinWrong {
     public static void main(String[] args) {
