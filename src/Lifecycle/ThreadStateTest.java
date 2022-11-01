@@ -1,5 +1,7 @@
 package Lifecycle;
 
+import java.util.Comparator;
+
 public class ThreadStateTest {
     public static void main(String[] args) {
         final Object syncObject = new Object();
